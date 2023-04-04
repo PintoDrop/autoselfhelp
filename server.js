@@ -7,6 +7,7 @@ const helpers = require("./utils/helpers");
 const stars = require('stars-rating');
 const bcrypt = require('bcrypt');
 const connect = require('connect-session-sequelize');
+const dotenv = require("dotenv");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
