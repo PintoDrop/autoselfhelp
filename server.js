@@ -6,7 +6,8 @@ const routes = require("./controllers");
 const helpers = require("./utils/helpers");
 const stars = require('stars-rating');
 const bcrypt = require('bcrypt');
-const connect = require('connect-session-sequelize');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const sequelize = require('./config/connection');
 const dotenv = require("dotenv");
 
 const app = express();
