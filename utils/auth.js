@@ -1,0 +1,1 @@
+const withAuth = require("npm-auth");

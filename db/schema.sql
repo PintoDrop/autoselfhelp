@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS dishgrab_db;
-CREATE DATABASE dishgrab_db;
+DROP DATABASE IF EXISTS autoselfhelp_db;
 
-CREATE DATABASE dishgrab_db;
+CREATE DATABASE autoselfhelp_db;
