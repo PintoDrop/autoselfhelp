@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express-handlebars": "^7.0.4",
+    "express-session": "^1.17.3",
+    "express.js": "^1.0.0",
+    "mysql2": "^3.2.0",
+    "passport": "^0.6.0",
+    "sequelize": "^6.30.0",
+    "stars-rating": "^1.1.0"
+  }
+}

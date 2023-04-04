@@ -1,4 +1,6 @@
-# Dish Grab1
+
+# Auto Self Help
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -15,11 +17,11 @@
 
 ## Description
 
-For this project we decided to create an application that allows the user to search for resturants and be able to rate and order food. The user will be able to create a log in that allows them to see from a list of resturants. When the user clicks on a resturant then they are able to see the dishes that are provided from that resturant. The user can also see a star rating given by other users and be able to rate the dishes themselves as well.
+For this project we decided to create an application that allows the user to create a login and then post about issues with their cars. When the user posts about their car issue then they are able to recieve feedback from other users. Once the user has received an answer they are able to rate the response with a star system.
 
 ## Usage
 
-The user will be able create a login with their email and create a password. The user will also be able to view from a list of resturants and see the dishes that are provided by that business. The user is can see the star ratings for each dish and add to the dishes rating.
+The user will be able create a login with their email and create a password. The user will also be able to post about their issues for their car. The user can see other users posts and the responses they received. The user will be able to rate the responses by stars depending on the feedback provided.
 
 ## Installation
 
@@ -35,26 +37,23 @@ _Website for license_
 
 ## Criteria-for-assignment
 
-GIVEN a food ordering application
+GIVEN a auto maintenance application
 
 _WHEN I visit the site for the first time_
 **THEN I am able to create a login with my email and create a password**
 
-_WHEN I search the resturants_
-**THEN I am presented with a list of the resturants availible**
+*WHEN I create a new post*
+**THEN I am able to see my post and other users can respond**
 
-_WHEN I click on a resturant_
-**THEN I am given a list of the dishes provided**
+*WHEN I search other posts by other users*
+**THEN I am presented with past posts that have issues and responses for their cars**
 
-_WHEN I see the list of dishes_
-**THEN I am able to see star ratings of each dish from other uses**
-
-_WHEN I rate a dish_
-**THEN my rating is inputted for that dish on the page**
+*WHEN I receive a result*
+**THEN I am able to rate the response with stars**
 
 ## Repository-Link
 
-[Github](https://github.com/PintoDrop/dishgrab)
+[Github](https://github.com/PintoDrop/autoselfhelp)
 
 ## Deployed-Application
 
