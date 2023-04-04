@@ -37,19 +37,19 @@ _Website for license_
 
 GIVEN a food ordering application
 
-*WHEN I visit the site for the first time*
+_WHEN I visit the site for the first time_
 **THEN I am able to create a login with my email and create a password**
 
-*WHEN I search the resturants*
+_WHEN I search the resturants_
 **THEN I am presented with a list of the resturants availible**
 
-*WHEN I click on a resturant*
+_WHEN I click on a resturant_
 **THEN I am given a list of the dishes provided**
 
-*WHEN I see the list of dishes*
+_WHEN I see the list of dishes_
 **THEN I am able to see star ratings of each dish from other uses**
 
-*WHEN I rate a dish*
+_WHEN I rate a dish_
 **THEN my rating is inputted for that dish on the page**
 
 ## Repository-Link
