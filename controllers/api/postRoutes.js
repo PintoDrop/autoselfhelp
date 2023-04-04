@@ -8,7 +8,7 @@ router.post("/", async (req, res) => {
       user_id: req.session.user_id,
     });
 
-    res.status(200).json(newBlog);
+    res.status(200).json(newPost);
   } catch (err) {
     res.status(400).json(err);
   }
@@ -16,19 +16,19 @@ router.post("/", async (req, res) => {
 
 router.delete("/:id", async (req, res) => {
   try {
-    const blogData = await Blog.destroy({
+    const postData = await Post.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
       },
     });
 
-    if (!blogData) {
+    if (!postData) {
       res.status(404).json({ message: "No posts found with this id!" });
       return;
     }
 
-    res.status(200).json(blogData);
+    res.status(200).json(postData);
   } catch (err) {
     res.status(500).json(err);
   }
