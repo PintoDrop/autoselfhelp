@@ -1,63 +1,49 @@
 const router = require("express").Router();
-const { Post, Comment, User } = require("../models/");
+const { Post } = require("../models/");
+const withAuth = require("../utils/auth");
 
-// get all posts for homepage
-router.get("/", async (req, res) => {
+router.get("/", withAuth, async (req, res) => {
   try {
     const postData = await Post.findAll({
-      include: [User],
+      where: {
+        userId: req.session.userId,
+      },
     });
 
-    const posts = postData.map((post) => post.get({ plain: true }
-    console.log(posts)
-    res.render("allPosts", { posts });
+    const posts = postData.map((post) => post.get({ plain: true }));
 
+    res.render("all-posts-admin", {
+      layout: "dashboard",
+      posts,
+    });
   } catch (err) {
-    res.status(500).json(err);
+    res.redirect("login");
   }
 });
 
-// get single post
-router.get("/post/:id", async (req, res) => {
+router.get("/new", withAuth, (req, res) => {
+  res.render("new-post", {
+    layout: "dashboard",
+  });
+});
+
+router.get("/edit/:id", withAuth, async (req, res) => {
   try {
-    const postData = await Post.findByPk(req.params.id, {
-      include: [
-        User,
-        {
-          model: Comment,
-          include: [User],
-        },
-      ],
-    });
+    const postData = await Post.findByPk(req.params.id);
 
     if (postData) {
       const post = postData.get({ plain: true });
 
-      res.render("single-post", { post });
+      res.render("edit-post", {
+        layout: "dashboard",
+        post,
+      });
     } else {
       res.status(404).end();
     }
   } catch (err) {
-    res.status(500).json(err);
+    res.redirect("login");
   }
-});
-
-router.get("/login", (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect("/");
-    return;
-  }
-
-  res.render("login");
-});
-
-router.get("/signup", (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect("/");
-    return;
-  }
-
-  res.render("signup");
 });
 
 module.exports = router;
