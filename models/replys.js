@@ -18,6 +18,9 @@ Reply.init(
       allowNull: false,
     },
   };
+   {
+  sequalize,
+  }
 );
 
 module.exports = Reply;
