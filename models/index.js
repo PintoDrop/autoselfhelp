@@ -3,6 +3,8 @@ const Post = require('./post');
 const Comment = require("./comments");
 const Reply = require("./replys");
 
+// class { Post, Comment, User, Reply } extends Model {}
+
 Post.hasMany(Comment, {
   foreignKey: "post_id",
   onDelete: "CASCADE",
