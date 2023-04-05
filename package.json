@@ -1,23 +1,24 @@
 {
-  "name": "techblog",
+  "name": "autoselfhelp",
   "version": "1.0.0",
   "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PintoDrop/techblog.git"
+    "url": "git+https://github.com/PintoDrop/autoselfhelp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PintoDrop/techblog/issues"
+    "url": "https://github.com/PintoDrop/autoselfhelp/issues"
   },
-  "homepage": "https://github.com/PintoDrop/techblog#readme",
+  "homepage": "https://github.com/PintoDrop/autoselfhelp#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
