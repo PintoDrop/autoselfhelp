@@ -13,7 +13,6 @@ Comment.hasMany(Reply, {
   onDelete: "CASCADE",
 });
 
-
 Post.belongsTo(User, {
   foreignKey: "user_id",
 });
