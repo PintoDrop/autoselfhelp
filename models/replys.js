@@ -17,7 +17,10 @@ Reply.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-  };
+  },
+  {
+    sequelize
+  }
 );
 
 module.exports = Reply;
