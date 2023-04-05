@@ -5,39 +5,36 @@ class Post extends Model {}
 
 Post.init(
   {
+    // POST NEEDS TO STORE: SUBJECT, DESCRIPTION, YEAR, MAKE, MODEL
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    subject:{
       type: DataTypes.STRING,
       allowNull: false,
-      foreignKey: false
-    },
-    description: {
+     },
+     description: {
       type: DataTypes.STRING,
-    },
-    //   date_created: {
-    //     type: DataTypes.DATE,
-    //     allowNull: false,
-    //     defaultValue: DataTypes.NOW,
-    //   },
-    //   user_id: {
-    //     type: DataTypes.INTEGER,
-    //     references: {
-    //       model: "user",
-    //       key: "id",
-    //     },
-    // },
+      allowNull: false,
+     },
+     year: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+     },
+     make: {
+      type: DataTypes.STRING,
+      allowNull: false,
+     },
+     model: {
+      type: DataTypes.STRING,
+      allowNull: false,
+     },
   },
   {
-    sequelize,
-    // timestamps: false,
-    // freezeTableName: true,
-    // underscored: true,
-    modelName: "post",
+    sequelize
   }
 );
 
