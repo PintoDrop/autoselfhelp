@@ -1,9 +1,7 @@
 const User = require("./user");
-const Post = require('./post');
-const Comment = require("./comments");
-const Reply = require("./replys");
-
-// class { Post, Comment, User, Reply } extends Model {}
+const Post = require("./post");
+const Comment = require("./comment"); // changed Comments to Comment
+const Reply = require("./reply");
 
 Post.hasMany(Comment, {
   foreignKey: "post_id",

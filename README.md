@@ -1,6 +1,4 @@
-
 # Auto Self Help
-
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -39,16 +37,16 @@ _Website for license_
 
 GIVEN a auto maintenance application
 
-*WHEN I visit the site for the first time*
+_WHEN I visit the site for the first time_
 **THEN I am able to create a login with my email and create a password**
 
-*WHEN I create a new post*
+_WHEN I create a new post_
 **THEN I am able to see my post and other users can respond**
 
-*WHEN I search other posts by other users*
+_WHEN I search other posts by other users_
 **THEN I am presented with past posts that have issues and responses for their cars**
 
-*WHEN I receive a result*
+_WHEN I receive a result_
 **THEN I am able to rate the response with stars**
 
 ## Repository-Link

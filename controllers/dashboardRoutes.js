@@ -1,49 +1,47 @@
 const router = require("express").Router();
-const { Post } = require("../models/");
+const { Post, User, Comment } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
   try {
+    // Get all post and JOIN with user data
     const postData = await Post.findAll({
-      where: {
-        userId: req.session.userId,
-      },
+      include: [User],
     });
 
+    // Serialize data so the template can read it
     const posts = postData.map((post) => post.get({ plain: true }));
 
-    res.render("all-posts-admin", {
-      layout: "dashboard",
+    // Pass serialized data and session flag into template
+    res.render("dashboard", {
       posts,
+      message: "Dashboard",
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.redirect("login");
   }
-});
-
-router.get("/new", withAuth, (req, res) => {
-  res.render("new-post", {
-    layout: "dashboard",
-  });
 });
 
 router.get("/edit/:id", withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id);
 
-    if (postData) {
-      const post = postData.get({ plain: true });
+    const post = postData.get({ plain: true });
 
-      res.render("edit-post", {
-        layout: "dashboard",
-        post,
-      });
-    } else {
-      res.status(404).end();
-    }
+    res.render("post", { post, logged_in: req.session.logged_in });
   } catch (err) {
-    res.redirect("login");
+    res.status(500).json(err);
   }
 });
 
+router.delete("/:id", withAuth, async (req, res) => {
+  try {
+    const post = await Post.destroy({ where: { id: req.params.id } });
+
+    res.render("post", { post, logged_in: req.session.logged_in });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 module.exports = router;

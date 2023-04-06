@@ -17,9 +17,9 @@ Reply.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-  },
-  {
-    sequelize
+  };
+   {
+  sequalize,
   }
 );
 
