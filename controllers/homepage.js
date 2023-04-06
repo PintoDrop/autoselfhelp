@@ -9,9 +9,10 @@ router.get("/", async (req, res) => {
     });
 
     const posts = postData.map((post) => post.get({ plain: true }));
-    console.log(posts)
-    res.render("allPosts", { posts });
 
+    console.log(posts);
+    res.render("allPosts", { posts });
+    
   } catch (err) {
     res.status(500).json(err);
   }
@@ -59,5 +60,4 @@ router.get("/signup", (req, res) => {
 
   res.render("signup");
 });
-
 module.exports = router;
