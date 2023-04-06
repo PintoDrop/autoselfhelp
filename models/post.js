@@ -6,12 +6,12 @@ class Post extends Model {}
 Post.init(
   {
     // POST NEEDS TO STORE: SUBJECT, DESCRIPTION, YEAR, MAKE, MODEL
-    // id: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   primaryKey: true,
-    //   autoIncrement: true,
-    // },
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     subject: {
       type: DataTypes.STRING,
       allowNull: false,

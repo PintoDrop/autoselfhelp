@@ -16,8 +16,11 @@
   </div>
 </head>
 <body>
-  {{{body}}}
  
+ {{#if logged_in}}
+ <a href="/logout" id="logout" class="btn btn-info" type="submit">Log out</a>
+
+ {{else}}
     <div class="d-grid gap-2">
       <a href="/login" id="login" class="btn btn-info" type="submit">Log In</a>
     </div>
@@ -25,7 +28,15 @@
     <div>
       <div class="d-grid gap-2">
       <a href="/signup" id="signup" class="btn btn-info" type="submit">Sign Up</a>
+    {{/if}}
     </div>
+   
+
+
+  <main>
+  {{{body}}}
+  </main>
+
 
 </body>
 </html>
