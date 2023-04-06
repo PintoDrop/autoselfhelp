@@ -62,3 +62,11 @@ GIVEN a auto maintenance application
 ## Screen-Shots
 
 ![Category js ids]()
+
+
+
+<!-- why do we have a fork?
+pulling main isn't same for everyone off github
+how to get npm run seed to work so posts are on main page
+having login and sign up buttons change for when logging in or signing up
+ -->
