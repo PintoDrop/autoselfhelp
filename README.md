@@ -42,6 +42,9 @@ GIVEN a auto maintenance application
 *WHEN I visit the site for the first time*
 **THEN I am able to create a login with my email and create a password**
 
+*WHEN I log in*
+**THEN I am able to see previous posts by other users**
+
 *WHEN I create a new post*
 **THEN I am able to see my post and other users can respond**
 
@@ -49,7 +52,10 @@ GIVEN a auto maintenance application
 **THEN I am presented with past posts that have issues and responses for their cars**
 
 *WHEN I receive a result*
-**THEN I am able to rate the response with stars**
+**THEN I am able to comment a response**
+
+*WHEN I see a response*
+**THEN I am able to reply to the comment**
 
 ## Repository-Link
 
@@ -66,9 +72,10 @@ GIVEN a auto maintenance application
 
 
 <!-- 
-why do we have a fork? and is it impacting our git pulls?
+why do we have a fork? and is it impacting our git pulls?- nO!
 pulling main isn't same for everyone off github - fixed?!
 how to get npm run seed to work so posts are on main page
 having login and sign up buttons change for when logging in or signing up
 how can we add if/else to our main so the buttons can change?
+can't load all posts view either
  -->

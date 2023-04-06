@@ -6,14 +6,15 @@
     "description": "I noticed that when I try using garlic instead of petrol my car seems to stop working. Has anyone else had an issue with a car possibly being a vampire?",
     "year": "2001",
     "make": "toyota",
-    "model": "Corola"
+    "model": "Corola",
+    "user_id": 1
   },
   {
- 
-    "name": "Tires that don't get tired",
-    "subject": "When I was in high school I bought these michelin tires and haven't needed to replace them since. Does anyone else have a tire brand that they prefer? I may need to switch soon because it's been sooooo long",
-    "year": "2001",
+    "subject": "Tires that don't get tired",
+    "description": "When I was in high school I bought these michelin tires and haven't needed to replace them since. Does anyone else have a tire brand that they prefer? I may need to switch soon because it's been sooooo long",
+    "year": 2001,
     "make": "toyota",
-    "model": "Corola"
+    "model": "Corola",
+    "user_id": 2
   }
 ]
