@@ -72,8 +72,6 @@ GIVEN a auto maintenance application
 
 
 <!-- 
-why do we have a fork? and is it impacting our git pulls?- nO!
-pulling main isn't same for everyone off github - fixed?!
 how to get npm run seed to work so posts are on main page
 having login and sign up buttons change for when logging in or signing up
 how can we add if/else to our main so the buttons can change?
