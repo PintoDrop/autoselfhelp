@@ -1,18 +1,18 @@
 
 [
   {
-    
+
     "subject": "My car might be a vampire",
     "description": "I noticed that when I try using onions instead of petrol my car seems to stop working. Has anyone else had an issue with a car possibly being a vampire?",
-    "year": 200,
+    "year": "2001",
     "make": "toyota",
     "model": "Corola"
   },
   {
-    
+ 
     "name": "Tires that don't get tired",
     "subject": "When I was in high school I bought these michelin tires and haven't needed to replace them since. Does anyone else have a tire brand that they prefer? I may need to switch soon because it's been sooooo long",
-    "year": 200,
+    "year": "2001",
     "make": "toyota",
     "model": "Corola"
   }
