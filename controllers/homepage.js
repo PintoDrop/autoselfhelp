@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
       include: [User],
     });
 
-    const posts = postData.map((post) => post.get({ plain: true }
+    const posts = postData.map((post) => post.get({ plain: true }));
     console.log(posts)
     res.render("allPosts", { posts });
 
