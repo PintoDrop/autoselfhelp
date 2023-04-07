@@ -7,6 +7,7 @@ router.post("/login", async (req, res) => {
     console.log("here login");
     console.log(req.body.email);
     console.log(req.body.password);
+    console.log(userData);
     if (!userData) {
       res
         .status(400)
@@ -18,8 +19,8 @@ router.post("/login", async (req, res) => {
 
     if (!validPassword) {
       res
-        .status(400)
-        .json({ message: "Please re-enter user name and password" });
+        .status(405)
+        .json({ message: "Please re-enter user name and password 2" });
       return;
     }
 
@@ -30,6 +31,7 @@ router.post("/login", async (req, res) => {
       res.json({ user: userData, message: "Logged in" });
     });
   } catch (err) {
+    console.log(err)
     res.status(400).json(err);
   }
   // res.send("success reached here");
