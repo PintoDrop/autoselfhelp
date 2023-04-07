@@ -5,7 +5,7 @@ class Post extends Model {}
 
 Post.init(
   {
-    //POST NEEDS TO STORE: SUBJECT, DESCRIPTION, YEAR, MAKE, MODEL
+    // POST NEEDS TO STORE: SUBJECT, DESCRIPTION, YEAR, MAKE, MODEL
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,

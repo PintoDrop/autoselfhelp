@@ -40,13 +40,19 @@ GIVEN a auto maintenance application
 _WHEN I visit the site for the first time_
 **THEN I am able to create a login with my email and create a password**
 
+*WHEN I log in*
+**THEN I am able to see previous posts by other users**
+
+*WHEN I log in*
+**THEN I am able to see previous posts by other users**
+
 _WHEN I create a new post_
 **THEN I am able to see my post and other users can respond**
 
 _WHEN I search other posts by other users_
 **THEN I am presented with past posts that have issues and responses for their cars**
 
-_WHEN I receive a result_
+*WHEN I receive a result*
 **THEN I am able to rate the response with stars**
 
 ## Repository-Link
@@ -60,11 +66,3 @@ _WHEN I receive a result_
 ## Screen-Shots
 
 ![Category js ids]()
-
-
-
-<!-- why do we have a fork?
-pulling main isn't same for everyone off github
-how to get npm run seed to work so posts are on main page
-having login and sign up buttons change for when logging in or signing up
- -->
