@@ -1,13 +1,12 @@
 
 [
   {
-
     "subject": "My car might be a vampire",
     "description": "I noticed that when I try using garlic instead of petrol my car seems to stop working. Has anyone else had an issue with a car possibly being a vampire?",
     "year": "2001",
     "make": "toyota",
     "model": "Corola",
-    "user_id": 1
+    "date_created": "2022-01-17T04:33:12.000Z"
   },
   {
     "subject": "Tires that don't get tired",
@@ -15,6 +14,6 @@
     "year": "2001",
     "make": "toyota",
     "model": "Corola",
-    "user_id": 2
+    "date_created": "2022-01-17T04:33:12.000Z"
   }
 ]
