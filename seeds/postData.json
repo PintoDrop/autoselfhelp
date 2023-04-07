@@ -1,25 +1,25 @@
 
 [
   {
-    "id": 20,
+    
     "subject": "My car might be a vampire",
     "description": "I noticed that when I try using onions instead of petrol my car seems to stop working. Has anyone else had an issue with a car possibly being a vampire?",
-    "year": 1998,
+    "year": "1998",
     "make": "Honda",
     "model": "Civic",
-    "createdAt": "1/2/22",
-    "updatedAt": "1/2/23",
-    "user_id": 1
+    "createdAt": "01/02/22",
+    "updatedAt": "01/02/23"
+    
   },
   {
-     "id": 2,
+    
     "subject": "My car might be a tomato",
     "description": "I noticed that when I try using onions instead of petrol my car seems to stop working. Has anyone else had an issue with a car possibly being a vampire?",
     "year": 1997,
     "make": "Honda",
     "model": "Accord",
     "createdAt": "1/2/23",
-    "updatedAt": "1/23/23",
-    "user_id": 2
+    "updatedAt": "1/23/23"
+    
   }
 ]
