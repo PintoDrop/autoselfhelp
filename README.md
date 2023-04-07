@@ -42,6 +42,9 @@ GIVEN a auto maintenance application
 *WHEN I visit the site for the first time*
 **THEN I am able to create a login with my email and create a password**
 
+*WHEN I log in*
+**THEN I am able to see previous posts by other users**
+
 *WHEN I create a new post*
 **THEN I am able to see my post and other users can respond**
 
@@ -49,7 +52,10 @@ GIVEN a auto maintenance application
 **THEN I am presented with past posts that have issues and responses for their cars**
 
 *WHEN I receive a result*
-**THEN I am able to rate the response with stars**
+**THEN I am able to comment a response**
+
+*WHEN I see a response*
+**THEN I am able to reply to the comment**
 
 ## Repository-Link
 

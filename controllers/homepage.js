@@ -12,7 +12,6 @@ router.get("/", async (req, res) => {
 
     console.log(posts);
     res.render("allPosts", { posts });
-    
   } catch (err) {
     res.status(500).json(err);
   }
@@ -60,4 +59,5 @@ router.get("/signup", (req, res) => {
 
   res.render("signup");
 });
+
 module.exports = router;
