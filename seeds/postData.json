@@ -1,19 +1,5 @@
 
 [
   {
-    "subject": "My car might be a vampire",
-    "description": "I noticed that when I try using garlic instead of petrol my car seems to stop working. Has anyone else had an issue with a car possibly being a vampire?",
-    "year": "2001",
-    "make": "toyota",
-    "model": "Corola",
-    "date_created": "2022-01-17T04:33:12.000Z"
-  },
-  {
-    "subject": "Tires that don't get tired",
-    "description": "When I was in high school I bought these michelin tires and haven't needed to replace them since. Does anyone else have a tire brand that they prefer? I may need to switch soon because it's been sooooo long",
-    "year": "2001",
-    "make": "toyota",
-    "model": "Corola",
-    "date_created": "2022-01-17T04:33:12.000Z"
   }
 ]
