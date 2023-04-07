@@ -11,7 +11,8 @@ const loginFormHandler = async function(event) {
     }),
     headers: { "Content-Type": "application/json" },
   })
-    .then(() => {
+    .then((res) => {
+      console.log(res);
       document.location.replace("/dashboard");
     })
     .catch((err) => console.log(err));
