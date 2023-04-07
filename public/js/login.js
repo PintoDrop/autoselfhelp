@@ -1,8 +1,8 @@
 const loginFormHandler = async function (event) {
   console.log("hi herehere");
   event.preventDefault();
-  const emailEL = document.querySelector("#formGroupExampleInput");
-  const passwordEl = document.querySelector("#formGroupExampleInput2");
+  const emailEL = document.querySelector("#email");
+  const passwordEl = document.querySelector("#password");
   fetch("/api/user/login", {
     method: "POST",
     body: JSON.stringify({
