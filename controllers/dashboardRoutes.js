@@ -3,10 +3,14 @@ const { Post, User, Comment } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
+  console.log("here in dhasbord");
+
   try {
     // Get all post and JOIN with user data
     const postData = await Post.findAll({
-      include: [User],
+      where: {
+        user_id: req.session.user_id,
+      },
     });
 
     // Serialize data so the template can read it
@@ -19,6 +23,7 @@ router.get("/", withAuth, async (req, res) => {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
+    console.log(err);
     res.redirect("login");
   }
 });
