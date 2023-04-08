@@ -3,7 +3,7 @@ const userRoutes = require("./userRoutes");
 const postRoutes = require("./postRoutes");
 // add uploads(images), comments
 
-router.use('./users', userRoutes);
+router.use('./user', userRoutes);
 router.use('./posts', postRoutes);
 
 module.exports = router;
