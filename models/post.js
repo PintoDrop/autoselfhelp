@@ -10,45 +10,44 @@ Post.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      autoIncrement: true
     },
     subject: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     description: {
       type: DataTypes.STRING,
-      allowNull: false,
-      
+      allowNull: false
     },
     year: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     make: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     model: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     date_created: {
       type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
+      allowNull: true,
+      defaultValue: DataTypes.NOW
     },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
         model: "user",
-        key: "id",
-      },
-    },
+        key: "id"
+      }
+    }
   },
   {
     sequelize,
-    modelName: "post",
+    modelName: "post"
   }
 );
 
