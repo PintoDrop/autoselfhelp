@@ -1,19 +1,18 @@
-const loginFormHandler = async function(event) {
+const loginFormHandler = async function (event) {
   console.log("hi herehere");
   event.preventDefault();
-  const emailEL = document.querySelector("#email");
-  const passwordEl = document.querySelector("#password");
-  fetch("/api/users/login", {
+  const emailEL = document.querySelector("#formGroupExampleInput");
+  const passwordEl = document.querySelector("#formGroupExampleInput2");
+  fetch("/api/user/login", {
     method: "POST",
     body: JSON.stringify({
       email: emailEL.value,
-      password: passwordEl.value,
+      password: passwordEl.value
     }),
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json" }
   })
-    .then((res) => {
-      console.log(res);
-      document.location.replace("/dashboard");
+    .then(() => {
+      document.location.replace("/");
     })
     .catch((err) => console.log(err));
 };
