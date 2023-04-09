@@ -5,13 +5,13 @@ const { Post, Comment, User } = require("../models/");
 router.get("/", async (req, res) => {
   try {
     const postData = await Post.findAll({
-      include: [User],
+      include: [User]
     });
 
     const posts = postData.map((post) => post.get({ plain: true }));
 
     console.log(posts);
-    res.render("homePage", { layout: "main", posts });
+    res.render("homepage", { posts, loggedIn: req.session.loggedIn });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -25,9 +25,9 @@ router.get("/post/:id", async (req, res) => {
         User,
         {
           model: Comment,
-          include: [User],
-        },
-      ],
+          include: [User]
+        }
+      ]
     });
 
     if (postData) {
@@ -59,4 +59,5 @@ router.get("/signup", (req, res) => {
 
   res.render("signup");
 });
+
 module.exports = router;

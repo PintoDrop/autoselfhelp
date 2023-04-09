@@ -1,11 +1,9 @@
-<title>Auto Self Help</title>
-
 <div class="col-md-6">
 
   <body>
-    
+
     <h2>Don't have a login? Sign up below</h2>
-    <form>
+    <form id="signup-form">
       <div class="nameSignup">
         <label for="signup-name">Name:</label>
         <input class="form-control" type="text" id="name" placeholder="Enter your name here" />
@@ -23,12 +21,14 @@
       <br>
 
       <div class="d-grid gap-2">
-      <a href="/signup">
-      <button id="signup" class="btn btn-info" type="submit">Sign Up</button>
-      </a>
+        <a href="/signup">
+          <button id="signup" class="btn btn-info" type="submit">Sign Up</button>
+        </a>
       </div>
-      
+
     </form>
 </div>
 
-</body> 
+</body>
+
+<script src="/js/signup.js"></script>
