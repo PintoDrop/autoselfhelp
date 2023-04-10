@@ -1,3 +1,21 @@
-<title>Auto Self Help Posts</title>
+<div class="post card">
+  <div class="card-header">
+    <h2>>Auto Self Help Posts</h2>
+  </div>
+  {{!-- <form class="card-body"> --}}
+    <input type="hidden" name="post-id" value="{{post.id}}" />
 
-<h2>test1</h2>
+    <label class="form-label" for="post-title">Title</label>
+    <input type="text" name="post-title" value="{{post.subject}}" class="form-input" />
+
+    <label class="form-label" for="post-body">Content</label>
+    <textarea name="post-body" class="form-input">{{post.description}}</textarea>
+    
+    
+    <button type="button" id="edit-post-form" class="btn">Update</button>
+
+    <button type="button" id="delete-btn" class="btn">Delete</button>
+  {{!-- </form> --}}
+</div>
+
+<script src="/js/edit.js"></script>
