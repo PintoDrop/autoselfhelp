@@ -68,3 +68,10 @@ GIVEN a auto maintenance application
 ## Screen-Shots
 
 ![Category js ids]()
+
+<!-- 
+viewing all posts as user
+new technology (ratings?)
+other users viewing all posts
+search for posts
+ -->

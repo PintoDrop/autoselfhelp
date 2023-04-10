@@ -1,7 +1,8 @@
 <div class="posts list-group">
+  {{!-- <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger"> --}}
   {{#each posts}}
       {{!-- <input id="input-id" type="text" class="rating" data-size="lg" > --}}
-    <a class="list-item flex-row justify-space-between text-center" href="/dashboard/edit/{{id}}">
+    <a class="list-item text-center" href="/dashboard/edit/{{id}}">
       <span>{{subject}}</span>
       <span>Description: {{description}}</span>
       {{!-- <span>{{year}}</span>
@@ -11,4 +12,5 @@
     </a>
   {{/each}}
   
+    {{!-- </div> --}}
 </div>
