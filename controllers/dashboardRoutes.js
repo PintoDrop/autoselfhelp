@@ -3,7 +3,7 @@ const { Post } = require("../models/");
 const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
-  console.log("here in dhasbord");
+  console.log("here in dashboard");
 
   try {
     const postData = await Post.findAll({
