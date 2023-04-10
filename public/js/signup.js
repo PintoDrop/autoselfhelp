@@ -1,3 +1,7 @@
+var generator = require("generate-password");
+// import generator from "generate-password";
+var showPassEl = document.querySelector("#random-password");
+
 const signupFormHandler = async function (event) {
   event.preventDefault();
 
@@ -10,9 +14,9 @@ const signupFormHandler = async function (event) {
     body: JSON.stringify({
       name: nameEl.value,
       email: emailEl.value,
-      password: passwordEl.value
+      password: passwordEl.value,
     }),
-    headers: { "Content-Type": "application/json" }
+    headers: { "Content-Type": "application/json" },
   });
 
   if (response.ok) {
@@ -22,6 +26,19 @@ const signupFormHandler = async function (event) {
   }
 };
 
+function genPass() {
+  var password = generator.generate({
+    length: 16,
+    numbers: true,
+  });
+  console.log(password);
+
+  showPassEl.textContent = password;
+
+}
+
 document
   .querySelector("#signup-form")
   .addEventListener("submit", signupFormHandler);
+
+document.querySelector("#generate").addEventListener("click", genPass);
