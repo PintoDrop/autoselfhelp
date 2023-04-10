@@ -1,4 +1,4 @@
-var generator = require("generate-password");
+var generator = require("generate");
 // import generator from "generate-password";
 var showPassEl = document.querySelector("#random-password");
 
@@ -34,7 +34,6 @@ function genPass() {
   console.log(password);
 
   showPassEl.textContent = password;
-
 }
 
 document
