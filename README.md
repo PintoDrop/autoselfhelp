@@ -17,15 +17,15 @@
 
 ## Description
 
-For this project we decided to create an application that allows the user to create a login and then post about issues with their cars. When the user posts about their car issue then they are able to recieve feedback from other users. Once the user has received an answer they are able to rate the response with a star system.
+For this project we decided to create an application that allows the user to create a login and then post about issues with their cars. When the user posts about their car issue then they are able to recieve feedback from other users that will comment on the post. The user is able to create a sign up with their email and log in to see what other users have posted. The user can also interact with the application by commenting on posts by other users.
 
 ## Usage
 
-The user will be able create a login with their email and create a password. The user will also be able to post about their issues for their car. The user can see other users posts and the responses they received. The user will be able to rate the responses by stars depending on the feedback provided.
+The user will be able create a login with their email and create a password. The user will also be able to post about their issues for their car. The user can see other users posts and the responses they received. The user can also respond to other users posts and collaborate on possible solutions for the issues with their vehicles.
 
 ## Installation
 
-You will need to install node packages including express-handlebars, express.js, MYSQL2, sequelize, bcrypyt, express-session, and stars-rating.
+You will need to install node packages including express-handlebars, express.js, MYSQL2, sequelize, bcrypyt, and express-session.
 
 ## License
 
