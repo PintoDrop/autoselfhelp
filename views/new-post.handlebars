@@ -1,10 +1,34 @@
 <div class="row">
   <div class="">
     <form id="new-post-form" class="new-post-form">
-      <label for="post-subject"> subject : </label>
+
+  <div class="mb-3">
+  <label  class="form-label" for="post-subject">Title</label>
+  <input type="text" class="form-control" placeholder="Enter a title for your issue" name="post-subject">
+</div>
+
+  <div class="mb-3">
+  <label  class="form-label" for="post-description">Description</label>
+  <input type="text" class="form-control" placeholder="Enter a description of your issue" name="post-description">
+</div>
+
+<div class="mb-3">
+  <label class="form-label" for="post-year">Year</label>
+  <input type="text" class="form-control" placeholder="What year is the vehicle?" name="post-year">
+</div>
+<div class="mb-3">
+  <label  class="form-label" for="post-make">Make</label>
+  <input type="text" class="form-control"  placeholder="What's the make of the vehicle?" name="post-make">
+</div>
+<div class="mb-3">
+  <label class="form-label" for="post-model">Model</label>
+  <input type="text" class="form-control" placeholder="What model is your vehicle?" name="post-model">
+</div>
+
+      {{!-- <label for="post-subject"> subject : </label>
       <input type="text" name="post-subject" />
 
-      <label for="post-description"> description : </label>
+    <label for="post-description"> description : </label>
       <input type="text" name="post-description" />
 
       <label for="post-year"> year : </label>
@@ -14,7 +38,7 @@
       <input type="text" name="post-make" />
       
       <label for="post-model"> model : </label>
-      <input type="text" name="post-model" />
+      <input type="text" name="post-model" /> --}}
 
       <input type="submit" class="btn btn-success" value="Create">
 
