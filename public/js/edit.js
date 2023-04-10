@@ -3,9 +3,9 @@ const postId = document.querySelector('input[name="post-id"]').value;
 const editFormHandler = async function(event) {
   // event.preventDefault();
 
-  const subjectEl = document.querySelector('input[name="post-title"]').value;
+  const subjectEl = document.querySelector('input[name="post-subject"]').value;
   const descriptionEl = document.querySelector(
-    'textarea[name="post-body"]').value;
+    'textarea[name="post-description"]').value;
  
   // const descriptionEl = document.querySelector('textarea[name="post-description"]').value;
   // const yearEl = document.querySelector('input[name="post-year"]').value;
