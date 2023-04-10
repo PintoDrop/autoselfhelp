@@ -1,12 +1,17 @@
 <div class="posts list-group">
+  {{!-- <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger"> --}}
   {{#each posts}}
-    <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
-      <span>{{subject}}</span>
-      <span>{{description}}</span>
-      <span>{{year}}</span>
+      {{!-- <input id="input-id" type="text" class="rating" data-size="lg" > --}}
+    <a class="list-item text-center" href="/dashboard/edit/{{id}}">
+      <span><h3>{{subject}}</h3></span>
+      <span><p>Description: {{description}}</p></span>
+   
+      {{!-- <span>{{year}}</span>
       <span>{{make}}</span>
       <span>{{model}}</span>
-      <span>{{format_date createdAt}}</span>
+      <span>{{format_date createdAt}}</span> --}}
     </a>
   {{/each}}
+  
+    {{!-- </div> --}}
 </div>

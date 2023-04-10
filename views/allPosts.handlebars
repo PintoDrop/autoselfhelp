@@ -1,4 +1,16 @@
-{{!-- 
-  <title>Auto Self Help Posts1</title>
 
-    <h2>test1</h2> --}}
+  <title>Auto Self Help Posts</title>
+
+<div class="posts list-group">
+  {{!-- <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger"> --}}
+  {{#each posts}}
+      {{!-- <input id="input-id" type="text" class="rating" data-size="lg" > --}}
+     <h2>
+    <a class="list-item text-center" href="/post/{{id}}">
+     {{subject}}
+     </h2>
+    </a>
+  {{/each}}
+  
+    {{!-- </div> --}}
+</div>
