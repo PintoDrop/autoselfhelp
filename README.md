@@ -77,7 +77,9 @@ GIVEN a auto maintenance application
 
 <!-- 
 viewing all posts as user
-new technology (ratings?)
+
+new technology (ratings?) - getting star ratings on the posts even if its just admin
+
 other users viewing all posts
 search for posts
  -->
