@@ -3,23 +3,22 @@ const postId = document.querySelector('input[name="post-id"]').value;
 const editFormHandler = async function(event) {
   // event.preventDefault();
 
-  const subjectEl = document.querySelector('input[name="post-title"]').value;
+  const subjectEl = document.querySelector('input[name="post-subject"]').value;
   const descriptionEl = document.querySelector(
-    'textarea[name="post-body"]').value;
- 
-  // const descriptionEl = document.querySelector('textarea[name="post-description"]').value;
-  // const yearEl = document.querySelector('input[name="post-year"]').value;
-  // const makeEl = document.querySelector('input[name="post-make"]').value;
-  // const modelEl = document.querySelector('input[name="post-model"]').value;
+    'textarea[name="post-description"]').value;
+  
+   const yearEl = document.querySelector('textarea[name="post-year"]').value;
+  const makeEl = document.querySelector('textarea[name="post-make"]').value;
+  const modelEl = document.querySelector('textarea[name="post-model"]').value;
     console.log(subjectEl, descriptionEl)
   await fetch(`/api/posts/${postId}`, {
     method: "PUT",
     body: JSON.stringify({
       subject: subjectEl,
-      description: descriptionEl
-      // year: yearEl,
-      // make: makeEl,
-      // model: modelEl,
+      description: descriptionEl,
+      year: yearEl,
+      make: makeEl,
+      model: modelEl
     }),
     headers: {
       "Content-Type": "application/json",

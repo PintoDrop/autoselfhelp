@@ -14,13 +14,13 @@
 <div class="post">
   <article class="card">
     <div class="card-header flex-row justify-space-between">
-      <h2>{{post.title}}</h2>
+      <h2>{{post.subject}}</h2>
       <div>
-        Posted by {{post.User.username}} on {{format_date post.createdAt}}
+        Posted by {{post.user.name}} on {{format_date post.createdAt}}
       </div>
     </div>
     <div class="card-body">
-      {{post.body}}
+      {{post.description}}
     </div>
   </article>
 
@@ -31,13 +31,13 @@
       </div>
 
       <div class="card-body">
-        {{#each post.Comments}}
+        {{#each post.Comments as |comment| }}
           <div>
             <p>
-              {{body}}
+              {{comment.comment}}
             </p>
             <p>
-              &mdash; {{User.username}}, {{format_date createdAt}}
+              &mdash; {{comment.user.name}}, {{format_date comment.createdAt}}
             </p>
           </div>
         {{/each}}
