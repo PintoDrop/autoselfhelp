@@ -67,7 +67,13 @@ GIVEN a auto maintenance application
 
 ## Screen-Shots
 
-![Category js ids]()
+![Sign up screenshot](./images/signup.JPG)
+
+![Log in screenshot](./images/login.JPG)
+
+![New Post Screenshot](./images/NewPost.JPG)
+
+![Edit Post screenshot](./images/editpost.JPG)
 
 <!-- 
 viewing all posts as user
