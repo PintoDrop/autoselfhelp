@@ -7,12 +7,12 @@ const loginFormHandler = async function (event) {
     method: "POST",
     body: JSON.stringify({
       email: emailEL.value,
-      password: passwordEl.value
+      password: passwordEl.value,
     }),
-    headers: { "Content-Type": "application/json" }
+    headers: { "Content-Type": "application/json" },
   })
     .then(() => {
-      document.location.replace("/");
+      document.location.replace("/dashboard");
     })
     .catch((err) => console.log(err));
 };

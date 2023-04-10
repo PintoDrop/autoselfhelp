@@ -6,7 +6,7 @@ router.post("/", (req, res) => {
   User.create({
     name: req.body.name,
     email: req.body.email,
-    password: req.body.password
+    password: req.body.password,
   })
 
     .then((dbUserData) => {
@@ -61,7 +61,7 @@ router.post("/login", async (req, res) => {
 });
 
 router.post("/logout", (req, res) => {
-  if (req.session.loggedIn) {
+  if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();
     });
