@@ -78,8 +78,10 @@ GIVEN a auto maintenance application
 <!-- 
 viewing all posts as user
 
-new technology (ratings?) - getting star ratings on the posts even if its just admin
 
+new technology (ratings?) - getting star ratings on the posts even if its just admin
 other users viewing all posts
-search for posts
+being able to comment on posts
+deploy to heroku
+go over presentation
  -->
