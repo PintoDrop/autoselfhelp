@@ -1,0 +1,65 @@
+{{!-- <div class="posts list-group">
+  {{#each posts}}
+  <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
+    <span>{{subject}}</span>
+    <span>{{description}}</span>
+    <span>{{year}}</span>
+    <span>{{make}}</span>
+    <span>{{model}}</span>
+    <span>{{format_date createdAt}}</span>
+    
+  </a>
+  {{/each}}
+</div> --}}
+<div class="post">
+  <article class="card">
+    <div class="card-header flex-row justify-space-between">
+      <h2>{{post.subject}}</h2>
+      <div>
+        Posted by {{post.user.name}} on {{format_date post.createdAt}}
+      </div>
+    </div>
+    <div class="card-body">
+      {{post.description}}
+    </div>
+  </article>
+
+  {{#if post.Comments}}
+    <section class="card">
+      <div class="card-header">
+        <h3>Comments</h3>
+      </div>
+
+      <div class="card-body">
+        {{#each post.Comments as |comment| }}
+          <div>
+            <p>
+              {{comment.comment}}
+            </p>
+            <p>
+              &mdash; {{comment.user.name}}, {{format_date comment.createdAt}}
+            </p>
+          </div>
+        {{/each}}
+      </div>
+    </section>
+  {{/if}}
+
+  <form id="new-comment-form" class="card">
+    <div class="card-header">
+      <h3>Add New Comment</h3>
+    </div>
+
+    <div class="card-body">
+      <input type="hidden" name="post-id" value="{{post.id}}" />
+
+      <label class="form-label" for="comment-body">Comment</label>
+
+      <textarea name="comment-body" class="form-input"></textarea>
+
+      <button type="submit" class="btn">Submit</button>
+    </div>
+  </form>
+</div>
+
+<script src="/js/comment.js"></script>
