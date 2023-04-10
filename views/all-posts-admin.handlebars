@@ -2,8 +2,6 @@
   {{!-- <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger"> --}}
   {{#each posts}}
       {{!-- <input id="input-id" type="text" class="rating" data-size="lg" > --}}
-     
-    <a class="list-item text-center" href="/dashboard/edit/{{id}}">
       <span><h3>{{subject}}</h3></span>
       <span><p>Description: {{description}}</p></span>
    
@@ -11,6 +9,11 @@
       <span>{{make}}</span>
       <span>{{model}}</span>
       <span>{{format_date createdAt}}</span> --}}
+    <a class="list-item text-center" href="/dashboard/edit/{{id}}">
+    Edit Post
+    </a>
+    <a class="list-item text-center" href="/post/{{id}}">
+    Comment on Post
     </a>
 
     {{!-- <div class="rating large star-icon direction-rtl value-1 half color-default label-top">
