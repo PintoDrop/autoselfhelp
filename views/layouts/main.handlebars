@@ -8,11 +8,7 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-      {{!-- star-rating for bootsraps link --}}
-   <!-- default styles -->
-    {{!-- <link rel="stylesheet" href="node_modules/css-star-rating/css/star-rating.css"> --}}
 
-{{!-- end of rating scripts --}}
 
     <link rel="stylesheet" href="./css/style.css">
     <title>Auto Self Help</title>
@@ -26,11 +22,6 @@
     <h3>Please log in or sign up to view posts</h3>
   </div>
 
-  {{!-- {{#if logged_in}} --}}
-  {{!-- <a href="/logout" id="logout" class="btn btn-info" type="submit">Log out</a> --}}
-
-  {{!-- {{else}} --}}
-
   <div class="text-center flex-row">
     <a href="/login">
       <button id="login" class="btn btn-info" type="submit">Log In💻</button>
@@ -41,7 +32,6 @@
       <button id="signup" class="btn btn-info" type="submit">Sign Up! 📝</button>
     </a>
   </div>
-  {{!-- {{/if}} --}}
 
   <main>
     {{{body}}}
