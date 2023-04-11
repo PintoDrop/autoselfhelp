@@ -8,7 +8,7 @@ const helpers = require("./utils/helpers");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const sequelize = require("./config/connection");
 // const generator = require("generate");
-// const dotenv = require("dotenv");
+const dotenv = require("dotenv");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
