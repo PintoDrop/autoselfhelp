@@ -5,15 +5,20 @@
       <span class="text-center"><h3>{{subject}}</h3></span>
       <span><p class="text-center">{{description}}</p></span>
    
-      {{!-- <span>{{year}}</span>
-      <span>{{make}}</span>
-      <span>{{model}}</span>
-      <span>{{format_date createdAt}}</span> --}}
+      <span><p class="text-center">{{year}}</p></span>
+      <span><p class="text-center">{{make}}</p></span>
+      <span><p class="text-center">{{model}}</p></span>
+      <span><p class="text-center">{{format_date createdAt}}</p></span>
     <a class="list-item text-center" href="/dashboard/edit/{{id}}">
+    <button id="edit" class="btn btn-primary" type="edit">
     Edit Post
+    </button>
     </a>
+
     <a class="list-item text-center" href="/post/{{id}}">
+    <button id="edit" class="btn btn-warning" type="edit">
     Comment on Post
+    </button>
     </a>
 
     {{!-- <div class="rating large star-icon direction-rtl value-1 half color-default label-top">

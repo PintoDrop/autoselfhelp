@@ -2,12 +2,12 @@
   max-width: 50px;
 }
 
-h1 {
+/* h1 {
   font-family: 'Courier New', Courier, monospace;
-}
+} */
 
 body {
-  background-color: bisque;
+  background-color: #CFE2FF;
 }
 
 .header {
