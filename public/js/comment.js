@@ -14,7 +14,11 @@ const commentFormHandler = async function (event) {
       headers: {
         "Content-Type": "application/json",
       },
-    });
+    })
+      .then(() => {
+        document.location.replace("/posts");
+      })
+      .catch((err) => console.log(err));
 
     document.location.reload();
   }

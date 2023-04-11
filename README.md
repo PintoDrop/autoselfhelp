@@ -77,11 +77,11 @@ GIVEN a auto maintenance application
 
 <!-- 
 viewing all posts as user
-
-
-new technology (ratings?) - getting star ratings on the posts even if its just admin
+new technology (password generator)
 other users viewing all posts
-being able to comment on posts
 deploy to heroku
+
 go over presentation
+
+**Comments page needs dashboard layout
  -->

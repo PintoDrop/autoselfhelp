@@ -2,20 +2,50 @@
   {{!-- <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger"> --}}
   {{#each posts}}
       {{!-- <input id="input-id" type="text" class="rating" data-size="lg" > --}}
-      <span><h3>{{subject}}</h3></span>
-      <span><p>Description: {{description}}</p></span>
+      <span class="text-center"><h3>{{subject}}</h3></span>
+      <span><p class="text-center">{{description}}</p></span>
    
-      {{!-- <span>{{year}}</span>
-      <span>{{make}}</span>
-      <span>{{model}}</span>
-      <span>{{format_date createdAt}}</span> --}}
+      <span><p class="text-center">{{year}}</p></span>
+      <span><p class="text-center">{{make}}</p></span>
+      <span><p class="text-center">{{model}}</p></span>
+      <span><p class="text-center">{{format_date createdAt}}</p></span>
     <a class="list-item text-center" href="/dashboard/edit/{{id}}">
+    <button id="edit" class="border-warning btn btn-primary" type="edit">
     Edit Post
+    </button>
     </a>
+
     <a class="list-item text-center" href="/post/{{id}}">
+    <button id="edit" class="border-primary btn btn-warning" type="edit">
     Comment on Post
+    </button>
     </a>
+
+    {{!-- <div class="rating large star-icon direction-rtl value-1 half color-default label-top">
+   <div class="label-value">1.5</div>
+    <div class="star-container">
+        <div class="star">
+            <i class="star-empty">hi</i>
+            <i class="star-half"></i>
+            <i class="star-filled"></i>
+        </div>
+        <div class="star">
+            <i class="star-empty"></i>
+            <i class="star-half"></i>
+            <i class="star-filled"></i>
+        </div>
+        <div class="star">
+            <i class="star-empty"></i>
+            <i class="star-half"></i>
+            <i class="star-filled"></i>
+        </div>
+    </div>
+</div> --}}
+    
   {{/each}}
   
     {{!-- </div> --}}
 </div>
+
+{{!-- rating js script --}}
+{{!-- <script src="/js/rating.js"> </script> --}}

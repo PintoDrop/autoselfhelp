@@ -23,10 +23,12 @@
     "bcrypt": "^5.0.0",
     "bootstrap-star-rating": "^4.1.2",
     "connect-session-sequelize": "^7.0.4",
+    "css-star-rating": "^1.3.1",
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
+    "generate-password": "^1.7.0",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5",
     "stars-rating": "^1.1.0"

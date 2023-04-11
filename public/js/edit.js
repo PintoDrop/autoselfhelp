@@ -6,8 +6,7 @@ const editFormHandler = async function(event) {
   const subjectEl = document.querySelector('input[name="post-subject"]').value;
   const descriptionEl = document.querySelector(
     'textarea[name="post-description"]').value;
-  
-   const yearEl = document.querySelector('textarea[name="post-year"]').value;
+  const yearEl = document.querySelector('textarea[name="post-year"]').value;
   const makeEl = document.querySelector('textarea[name="post-make"]').value;
   const modelEl = document.querySelector('textarea[name="post-model"]').value;
     console.log(subjectEl, descriptionEl)
@@ -18,7 +17,7 @@ const editFormHandler = async function(event) {
       description: descriptionEl,
       year: yearEl,
       make: makeEl,
-      model: modelEl
+      model: modelEl,
     }),
     headers: {
       "Content-Type": "application/json",
