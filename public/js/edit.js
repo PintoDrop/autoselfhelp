@@ -4,11 +4,8 @@ const editFormHandler = async function(event) {
   // event.preventDefault();
 
   const subjectEl = document.querySelector('input[name="post-subject"]').value;
-  const subjectEl = document.querySelector('input[name="post-subject"]').value;
   const descriptionEl = document.querySelector(
     'textarea[name="post-description"]').value;
- 
-  // const descriptionEl = document.querySelector('textarea[name="post-description"]').value;
   const yearEl = document.querySelector('textarea[name="post-year"]').value;
   const makeEl = document.querySelector('textarea[name="post-make"]').value;
   const modelEl = document.querySelector('textarea[name="post-model"]').value;
@@ -17,10 +14,10 @@ const editFormHandler = async function(event) {
     method: "PUT",
     body: JSON.stringify({
       subject: subjectEl,
-      description: descriptionEl
-      // year: yearEl,
-      // make: makeEl,
-      // model: modelEl,
+      description: descriptionEl,
+      year: yearEl,
+      make: makeEl,
+      model: modelEl,
     }),
     headers: {
       "Content-Type": "application/json",
