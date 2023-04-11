@@ -64,7 +64,7 @@ GIVEN a auto maintenance application
 
 ## Deployed-Application
 
-[Deployed Application]()
+[Deployed Application](https://agile-ocean-74686.herokuapp.com/)
 
 ## Screen-Shots
 
@@ -78,13 +78,3 @@ GIVEN a auto maintenance application
 
 ![Comments page screenshot](./images/comments.JPG)
 
-<!-- 
-viewing all posts as user
-new technology (password generator)
-other users viewing all posts
-deploy to heroku
-
-go over presentation
-
-**Comments page needs dashboard layout
- -->

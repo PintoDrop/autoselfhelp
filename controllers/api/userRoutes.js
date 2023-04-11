@@ -58,7 +58,6 @@ router.post("/login", async (req, res) => {
   } catch (err) {
     res.status(400).json(err);
   }
-  // res.send("success reached here");
 });
 
 router.post("/logout", (req, res) => {
@@ -77,7 +76,6 @@ router.get("/generate", (req, res) => {
     numbers: true,
   });
 
-  // 'uEyMTw32v9'
   console.log(genPassword);
   res.json(genPassword);
 });
