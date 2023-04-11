@@ -10,6 +10,7 @@ router.get("/", async (req, res) => {
 
     const posts = postData.map((post) => post.get({ plain: true }));
 
+
     console.log(posts);
     res.render("homepage", { posts, loggedIn: req.session.loggedIn });
   } catch (err) {
@@ -33,7 +34,10 @@ router.get("/post/:id", async (req, res) => {
     if (postData) {
       const post = postData.get({ plain: true });
       console.log(post);
-      res.render("single-post", { post });
+     res.render("single-post", {
+       layout: "dashboard",
+       post,
+     });
     } else {
       res.status(404).end();
     }

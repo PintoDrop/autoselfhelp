@@ -1,27 +1,28 @@
 <div class="posts list-group">
-  {{!-- <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger"> --}}
+  {{! <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger"> }}
   {{#each posts}}
-      {{!-- <input id="input-id" type="text" class="rating" data-size="lg" > --}}
-      <span class="text-center"><h3>{{subject}}</h3></span>
-      <span><p class="text-center">{{description}}</p></span>
-   
-      <span><p class="text-center">{{year}}</p></span>
-      <span><p class="text-center">{{make}}</p></span>
-      <span><p class="text-center">{{model}}</p></span>
-      <span><p class="text-center">{{format_date createdAt}}</p></span>
+    {{! <input id="input-id" type="text" class="rating" data-size="lg" > }}
+    <span><p class="text-center">Posted by: {{user.name}}</p></span>
+    <span class="text-center"><h3>{{subject}}</h3></span>
+    <span><p class="text-center">{{description}}</p></span>
+
+    <span><p class="text-center">Year: {{year}}</p></span>
+    <span><p class="text-center">Make: {{make}}</p></span>
+    <span><p class="text-center">Model: {{model}}</p></span>
+    <span><p class="text-center">{{format_date createdAt}}</p></span>
     <a class="list-item text-center" href="/dashboard/edit/{{id}}">
-    <button id="edit" class="border-warning btn btn-primary" type="edit">
-    Edit Post
-    </button>
+      <button id="edit" class="border-warning btn btn-primary" type="edit">
+        Edit Post
+      </button>
     </a>
 
     <a class="list-item text-center" href="/post/{{id}}">
-    <button id="edit" class="border-primary btn btn-warning" type="edit">
-    Comment on Post
-    </button>
+      <button id="edit" class="border-primary btn btn-warning" type="edit">
+        Comment on Post
+      </button>
     </a>
 
-    {{!-- <div class="rating large star-icon direction-rtl value-1 half color-default label-top">
+    {{! <div class="rating large star-icon direction-rtl value-1 half color-default label-top">
    <div class="label-value">1.5</div>
     <div class="star-container">
         <div class="star">
@@ -40,12 +41,12 @@
             <i class="star-filled"></i>
         </div>
     </div>
-</div> --}}
-    
+</div> }}
+
   {{/each}}
-  
-    {{!-- </div> --}}
+
+  {{! </div> }}
 </div>
 
-{{!-- rating js script --}}
-{{!-- <script src="/js/rating.js"> </script> --}}
+{{! rating js script }}
+{{! <script src="/js/rating.js"> </script> }}
