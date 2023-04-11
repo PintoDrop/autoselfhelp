@@ -11,6 +11,24 @@
   </a>
   {{/each}}
 </div> --}}
+
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+   <div class="d-grid gap-2">
+    <a href="/dashboard/new"> 
+  <button type="button"class="btn btn-warning">Make A New Post</button>
+    </a>
+  </div>
+  </li>
+ <div class="d-grid gap-2">
+    <a href="/dashboard"> 
+  <button type="button"class="btn btn-dark">Back To All Posts</button>
+    </a>
+  </li>
+</ul>
+  </div>
+</div>
+
 <div class="post">
   <article class="card">
     <div class="card-header flex-row justify-space-between">
@@ -26,8 +44,9 @@
 
   {{#if post.Comments}}
     <section class="card">
-      <div class="card-header">
+      <div class="col-sm-2 col-form-label">
         <h3>Comments</h3>
+      </div>
       </div>
 
       <div class="card-body">
@@ -46,16 +65,16 @@
   {{/if}}
 
   <form id="new-comment-form" class="card">
-    <div class="card-header">
+    <div class="text-bg-primary p-3">
       <h3>Add New Comment</h3>
     </div>
 
     <div class="card-body">
       <input type="hidden" name="post-id" value="{{post.id}}" />
 
-      <label class="form-label" for="comment-body">Comment</label>
+      <label class="text-bg-secondary p-3 d-grid gap-2" for="comment-body">Comment</label>
 
-      <textarea name="comment-body" class="form-input"></textarea>
+      <textarea name="comment-body" class="form-control form-control-lg shadow-lg p-3 mb-5 bg-white rounded border border-primary" placeholder="Add your comment here"></textarea>
 
       <button type="submit" class="btn btn-info">Submit</button>
     </div>
