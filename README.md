@@ -82,4 +82,6 @@ other users viewing all posts
 deploy to heroku
 
 go over presentation
+
+**Comments page needs dashboard layout
  -->

@@ -1,6 +1,8 @@
 var generator = require("generate");
 // import generator from "generate-password";
 var showPassEl = document.querySelector("#random-password");
+// const generatePassword = require('generate-password');
+
 
 const signupFormHandler = async function (event) {
   event.preventDefault();
