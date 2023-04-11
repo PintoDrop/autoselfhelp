@@ -75,6 +75,8 @@ GIVEN a auto maintenance application
 
 ![Edit Post screenshot](./images/editpost.JPG)
 
+![Comments page screenshot](./images/comments.JPG)
+
 <!-- 
 viewing all posts as user
 new technology (password generator)
