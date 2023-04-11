@@ -49,10 +49,13 @@ GIVEN a auto maintenance application
 **THEN I am able to see previous posts**
 
 *WHEN I create a new post*
-**THEN I am able to see my post and other users can respond**
+**THEN I am able to see my post and other users can comment with feedback**
 
 *WHEN I edit my previous post*
 **THEN I am presented with sections that I can edit and update**
+
+*WHEN I view the edit page for my post*
+**THEN I am able to delete the entire post if I wish**
 
 *WHEN click on a post*
 **THEN I am able to comment a response**
@@ -69,6 +72,8 @@ GIVEN a auto maintenance application
 ## Screen-Shots
 
 ![Sign up screenshot](./images/signup.JPG)
+
+![Sign up page w/ generated password screenshot](./images/signupGenPass.JPG)
 
 ![Log in screenshot](./images/login.JPG)
 
