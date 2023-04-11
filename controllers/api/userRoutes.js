@@ -1,12 +1,13 @@
 const router = require("express").Router();
 const { User } = require("../../models");
+var generator = require("generate-password");
 
 router.post("/", (req, res) => {
   console.log(req.body);
   User.create({
     name: req.body.name,
     email: req.body.email,
-    password: req.body.password
+    password: req.body.password,
   })
 
     .then((dbUserData) => {
@@ -68,6 +69,17 @@ router.post("/logout", (req, res) => {
   } else {
     res.status(404).end();
   }
+});
+
+router.get("/generate", (req, res) => {
+  var genPassword = generator.generate({
+    length: 10,
+    numbers: true,
+  });
+
+  // 'uEyMTw32v9'
+  console.log(genPassword);
+  res.json(genPassword);
 });
 
 router.get("/", (req, res) => {
