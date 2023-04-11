@@ -8,6 +8,7 @@ const helpers = require("./utils/helpers");
 // const bcrypt = require("bcrypt");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const sequelize = require("./config/connection");
+// const generator = require("generate");
 // const dotenv = require("dotenv");
 
 const app = express();

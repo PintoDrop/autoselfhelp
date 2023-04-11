@@ -1,3 +1,4 @@
+var require = ('express');
 var generator = require("generate");
 // import generator from "generate-password";
 var showPassEl = document.querySelector("#random-password");
@@ -29,6 +30,8 @@ const signupFormHandler = async function (event) {
 };
 
 function genPass() {
+  // var showPassEl = document.querySelector("#random-password");
+  // var generator = require("generate");
   var password = generator.generate({
     length: 16,
     numbers: true,

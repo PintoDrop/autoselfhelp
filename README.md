@@ -17,7 +17,7 @@
 
 ## Description
 
-For this project we decided to create an application that allows the user to create a login and then post about issues with their cars. When the user posts about their car issue then they are able to recieve feedback from other users that will comment on the post. The user is able to create a sign up with their email and log in to see what other users have posted. The user can also interact with the application by commenting on posts by other users.
+For this project we decided to create an application that allows the user to create a login and then post about issues with their cars. When the user posts about their car issue then they are able to recieve feedback from other users that will comment on the post. The user is able to create a sign up with their email and log in to see what other users have posted. The user can also interact with the application by commenting on posts by other users. We also worked to incorporate a random password generator the user can use when they sign up.
 
 ## Usage
 
@@ -25,7 +25,7 @@ The user will be able create a login with their email and create a password. The
 
 ## Installation
 
-You will need to install node packages including express-handlebars, express.js, MYSQL2, sequelize, bcrypyt, and express-session.
+You will need to install node packages including express-handlebars, generate-password, express.js, MYSQL2, sequelize, bcrypyt, and express-session.
 
 ## License
 
@@ -42,20 +42,21 @@ GIVEN a auto maintenance application
 *WHEN I visit the site for the first time*
 **THEN I am able to create a login with my email and create a password**
 
+*WHEN I sign up*
+**Then I am given the option to create a random password that I can use for my login**
+
 *WHEN I log in*
-**THEN I am able to see previous posts by other users**
+**THEN I am able to see previous posts**
 
 *WHEN I create a new post*
 **THEN I am able to see my post and other users can respond**
 
-*WHEN I search other posts by other users*
-**THEN I am presented with past posts that have issues and responses for their cars**
+*WHEN I edit my previous post*
+**THEN I am presented with sections that I can edit and update**
 
-*WHEN I receive a result*
+*WHEN click on a post*
 **THEN I am able to comment a response**
 
-*WHEN I see a response*
-**THEN I am able to reply to the comment**
 
 ## Repository-Link
 
