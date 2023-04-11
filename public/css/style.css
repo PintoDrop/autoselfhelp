@@ -1,3 +1,19 @@
 #login {
   max-width: 50px;
 }
+
+/* h1 {
+  font-family: 'Courier New', Courier, monospace;
+} */
+
+body {
+  background-color: #CFE2FF;
+}
+
+.header {
+  background-color: azure;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+}

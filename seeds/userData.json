@@ -8,5 +8,10 @@
     "name": "Juan",
     "email": "systemofanup@gmail.com",
     "password": "234test"
+  },
+  {
+    "name": "Greg",
+    "email": "greg@craig.com",
+    "password": "234test"
   }
 ]
