@@ -1,9 +1,14 @@
 <div class="posts list-group">
  
   {{#each posts}}
-
+<div class="card text-center text-white bg-info mb-3">
+  {{!-- <div class="card"> --}}
+  <div class="card-header card text-white bg-dark mb-3">
+    
     <span><p class="text-center">Posted by: {{user.name}}</p></span>
     <span class="text-center"><h3>{{subject}}</h3></span>
+  </div>
+
     <span><p class="text-center">{{description}}</p></span>
 
     <span><p class="text-center">Year: {{year}}</p></span>
@@ -21,6 +26,7 @@
         Comment on Post
       </button>
     </a>
+</div>
 
 
 
